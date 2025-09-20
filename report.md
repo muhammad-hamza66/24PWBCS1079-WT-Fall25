@@ -1,0 +1,2 @@
+
+During this lab, I learned how to work with Git more effectively. I practiced creating new files, committing changes, and pushing them to a remote repository. I also got hands-on experience with branching and merging, which helped me understand how teams can collaborate on the same project without interfering with each other’s work. Overall, this lab gave me confidence in using Git as a version control tool." > report.md
