@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form</title>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <form action="#" method="post">
+      <label for="name">
+        Name
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter name"
+          required
+        />
+      </label>
+      <label for="regno"
+        >Reg No
+        <input
+          type="text"
+          name="regno"
+          id="regno"
+          placeholder="Enter Reg No"
+          required
+        />
+      </label>
+      <br />
+      <br />
+      <label for="email"
+        >Email
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter email"
+          required
+        />
+      </label>
+      <label for="password"
+        >Password
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Enter password"
+          required
+        />
+      </label>
+      <br />
+      <br />
+      <label for="course"
+        >Courses
+        <select name="course" id="course">
+          <option value="">choose course</option>
+          <option value="data science">data science</option>
+          <option value="artificial inteligence">artificial inteligence</option>
+          <option value="operating system">operating system</option>
+          <option value="applied physics">applied physics</option>
+          <option value="web development">web development</option>
+        </select>
+      </label>
+      <br />
+      <br />
+      <label>Semester:</label><br />
+      <input type="radio" name="semester" value="Spring" required />
+      Spring<br />
+      <input type="radio" name="semester" value="Summer" /> Summer<br />
+      <input type="radio" name="semester" value="Fall" /> Fall
+
+      <br />
+      <br />
+      <input type="checkbox" name="terms" required />
+      I agree to the Terms and Conditions
+      <br /><br />
+
+      <button type="submit">submit</button>
+    </form>
+  </body>
+</html>
