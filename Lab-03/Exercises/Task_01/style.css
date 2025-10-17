@@ -1,0 +1,91 @@
+      /* 5 BASIC SELECTORS */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    h1 {
+      color: rgb(137, 137, 211);
+    }
+
+    p {
+      color: #333;
+    }
+
+    .highlight {
+      background-color: yellow;
+    }
+
+    #main {
+      border: 2px solid #333;
+      padding: 15px;
+      margin: 10px;
+    }
+
+     /* 3 ATTRIBUTE SELECTORS */
+    input[type="text"] {
+      border: 2px solid green;
+    }
+
+    a[target="_blank"] {
+      color: red;
+      text-decoration: none;
+    }
+
+    img[alt*="logo"] {
+      width: 100px;
+      border-radius: 10px;
+    }
+
+    /*4 COMBINATORS*/
+    /* Descendant selector */
+    div p {
+      font-size: 20px;
+      color:  black;
+    }
+
+    /* Child selector */
+    #main > h2 {
+      color: rgb(44, 158, 44);
+    }
+
+    /* Adjacent sibling selector */
+    h2 + p {
+      font-weight: bold;
+    }
+
+    /* General sibling selector */
+    h3 ~ p {
+      color: blue;
+    }
+
+    /*5 PSEUDO-CLASSES*/
+    a:hover {
+      color: orange;
+    }
+
+    p:first-child {
+      font-style: italic;
+    }
+
+    li:nth-child(2) {
+      color: purple;
+    }
+
+    input:focus {
+      background-color: lightyellow;
+    }
+
+    button:active {
+      background-color: green;
+      color: white;
+    }
+
+    /*2 PSEUDO-ELEMENTS*/
+    p::first-line {
+      text-transform: uppercase;
+    }
+
+    h1::after {
+      content: ".....";
+    }

@@ -3,47 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>profile</title>
+    <title>Portfolio - Muhammad Hamza</title>
+    <link rel="stylesheet" href="./profile.css" />
   </head>
+
   <body>
-    <header>
+    <header class="navbar">
+      <h1 class="logo">MyPortfolio</h1>
       <nav>
-        <a href="./index.html">Home</a>
-        <a href="./navigation.html">profile</a>
-        <a href="./navigation.html" class="active">Navigation</a>
-        <a href="./registration.html">Registration</a>
-        <a href="./schedule.html">Schedule</a>
-        <a href="./contact.html">Contact</a>
+        <ul class="nav-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./profile.html" class="active">Profile</a></li>
+          <li><a href="./registration.html">Registration</a></li>
+          <li><a href="./schedule.html">Schedule</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
       </nav>
     </header>
-    <img src="../assets/images/pro.jpg" alt="Profile Picture" height="200px" width="200px"/>
-    <h1>MUHAMAMD HAMZA</h1>
-    <section>
-      <p>
-        I am a Computer Science student with a strong passion for frontend
-        development. I enjoy creating visually appealing and user-friendly web
-        interfaces that combine creativity with functionality. As a frontend
-        enthusiast, I love exploring modern web technologies, frameworks, and
-        design principles to bring ideas to life on the browser. I'm constantly
-        learning and experimenting with new tools to improve my skills and stay
-        updated with the latest trends in web development. My goal is to build
-        seamless, responsive, and engaging digital experiences for users.
-      </p>
-      <h1>
-        Contact Me
-      </h1>
-      <div class="contact">
-        <a href="mailto:muhammadhamzu12@gmail.com">Email</a>
-        <a href="tel:+3174135900">Phone</a>
-        <a href="https://github.com/muhammad-hamza66" target="_blank">GitHub</a>
-        <a
-          href="https://www.linkedin.com/in/muhammad-hamza-ba4618298/"
-          target="_blank"
-          >LinkedIn</a
-        >
+
+    <section class="profile-section">
+      <img
+        src="../assets/images/pro.jpg"
+        alt="Profile Picture"
+        class="profile-pic"
+      />
+
+      <div class="profile-content">
+        <h2>MUHAMMAD HAMZA</h2>
+        <h4>MERN Stack Developer | Frontend Enthusiast</h4>
+
+        <p>
+          I am a Computer Science student and passionate
+          <b>MERN Stack Developer</b> with a strong interest in creating
+          beautiful and functional web experiences. I enjoy combining creativity
+          with code to design clean, responsive, and interactive interfaces
+          using <b>React, Node.js, Express,</b> and <b>MongoDB</b>. I
+          continuously explore new tools and technologies to grow as a developer
+          and build seamless digital experiences that users love.
+        </p>
+
+        <div class="contact-links">
+          <h3>Contact Me</h3>
+          <a href="mailto:muhammadhamzu12@gmail.com" class="btn">Email</a>
+          <a href="tel:+3174135900" class="btn">Phone</a>
+          <a
+            href="https://github.com/muhammad-hamza66"
+            target="_blank"
+            class="btn"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/muhammad-hamza-ba4618298/"
+            target="_blank"
+            class="btn"
+            >LinkedIn</a
+          >
+        </div>
+
+        <a href="./index.html" class="back-link">← Back to Home</a>
       </div>
-      
-     <a href="./index.html" >Back to Home</a>
     </section>
+
+    <footer class="footer">
+      <p>© 2025 Muhammad Hamza | All Rights Reserved</p>
+    </footer>
   </body>
 </html>

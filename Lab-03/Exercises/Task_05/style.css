@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  text-align: center;
+  margin: 40px;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.gallery {
+     display: flex;
+     justify-content: center;
+     gap: 40px;
+     flex-wrap: wrap;
+
+}
+
+.image-card {
+  text-align: center;
+}
+
+.image-card img {
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+  transition: all 0.4s ease;
+}
+
+.rounded {
+  border-radius: 20px;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.shadowed {
+  border: 4px solid #ccc;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.filtered {
+  filter: grayscale(80%);
+}
+
+.filtered:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+.image-card img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+
+.overlay-card {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay-card img {
+  width: 250px;
+  height: 180px;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  border-radius: 0 0 10px 10px;
+}
+
+.overlay-card:hover .overlay-text {
+  opacity: 1;
+}

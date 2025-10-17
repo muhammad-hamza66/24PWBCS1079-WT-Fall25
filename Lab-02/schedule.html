@@ -3,100 +3,103 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Weekly Course Schedule</title>
+    <title>Weekly Course Schedule - Muhammad Hamza</title>
+    <link rel="stylesheet" href="./schedule.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
-    <header>
+    <header class="navbar">
+      <h1 class="logo">MyPortfolio</h1>
       <nav>
-        <a href="./index.html">Home</a>
-        <a href="./navigation.html">profile</a>
-        <a href="./navigation.html" class="active">Navigation</a>
-        <a href="./registration.html">Registration</a>
-        <a href="./schedule.html">Schedule</a>
-        <a href="./contact.html">Contact</a>
+        <ul class="nav-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./profile.html">Profile</a></li>
+          <li><a href="./registration.html">Registration</a></li>
+          <li><a href="./schedule.html" class="active">Schedule</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
       </nav>
     </header>
-    <h1>My Weekly Course Schedule</h1>
+    
+    <section class="page-header">
+      <h2>My Weekly Course Schedule</h2>
+      <p>
+        A detailed overview of my weekly classes — including lectures, labs, and
+        tutorial sessions.
+      </p>
+    </section>
 
-    <table border="1" cellpadding="10" cellspacing="0">
-      <tr>
-        <th>Day/Time</th>
-        <th>Monday</th>
-        <th>Tuesday</th>
-        <th>Wednesday</th>
-        <th>Thursday</th>
-        <th>Friday</th>
-      </tr>
+    <section class="table-container">
+      <table class="schedule-table">
+        <thead>
+          <tr>
+            <th>Day / Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+          </tr>
+        </thead>
 
-      <tr>
-        <td>08:00 - 09:50</td>
-        <td>Intro. To Data Science (T) - (R5)</td>
-        <td>Operating Systems (L) - (L2)</td>
-        <td>Web Technologies (T) - (R5)</td>
-        <td>Operating Systems (T) - (R3)</td>
-        <td>Web Technologies (L) - (L1)</td>
-      </tr>
+        <tbody>
+          <tr>
+            <td>08:00 - 09:50</td>
+            <td class="theory">Intro. To Data Science (T) - (R5)</td>
+            <td class="lab">Operating Systems (L) - (L2)</td>
+            <td class="theory">Web Technologies (T) - (R5)</td>
+            <td class="theory">Operating Systems (T) - (R3)</td>
+            <td class="lab">Web Technologies (L) - (L1)</td>
+          </tr>
 
-      <tr>
-        <td>09:40 - 10:30</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
+          <tr>
+            <td>09:40 - 10:30</td>
+            <td></td><td></td><td></td><td></td><td></td>
+          </tr>
 
-      <tr>
-        <td>10:30 - 11:20</td>
-        <td>Artificial Intelligence (T) - (R1)</td>
-        <td></td>
-        <td>Applied Physics (R4)</td>
-        <td></td>
-        <td>Islamic Studies (R5)</td>
-      </tr>
+          <tr>
+            <td>10:30 - 11:20</td>
+            <td class="theory">Artificial Intelligence (T) - (R1)</td>
+            <td></td>
+            <td class="theory">Applied Physics (R4)</td>
+            <td></td>
+            <td class="theory">Islamic Studies (R5)</td>
+          </tr>
 
-      <tr>
-        <td>11:20 - 12:10</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
+          <tr>
+            <td>11:20 - 12:10</td>
+            <td></td><td></td><td></td><td></td><td></td>
+          </tr>
 
-      <tr style="background-color: greenyellow; text-align: center">
-        <td>01:00 - 01:30</td>
-        <td colspan="5"><b>Prayer Break</b></td>
-      </tr>
+          <tr class="break-row">
+            <td>01:00 - 01:30</td>
+            <td colspan="5"><b>Prayer Break</b></td>
+          </tr>
 
-      <tr>
-        <td>01:30 - 02:20</td>
-        <td></td>
-        <td>Intro. To Data Science (L) - (L3)</td>
-        <td>Artificial Intelligence (L) - (L1)</td>
-        <td>Quran Tarjuma & Tafseer (UET, Masjid)</td>
-        <td></td>
-      </tr>
+          <tr>
+            <td>01:30 - 02:20</td>
+            <td></td>
+            <td class="lab">Intro. To Data Science (L) - (L3)</td>
+            <td class="lab">Artificial Intelligence (L) - (L1)</td>
+            <td class="theory">Quran Tarjuma & Tafseer (UET Masjid)</td>
+            <td></td>
+          </tr>
 
-      <tr>
-        <td>02:20 - 03:10</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
+          <tr><td>02:20 - 03:10</td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td>03:10 - 04:00</td><td></td><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+      </table>
+    </section>
 
-      <tr>
-        <td>03:10 - 04:00</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-    </table>
 
-    <a href="./index.html" class="back-home">Back to Home</a>
+    <a href="./index.html" class="back-home">← Back to Home</a>
+
+    <footer class="footer">
+      <p>© 2025 Muhammad Hamza | All Rights Reserved</p>
+    </footer>
   </body>
 </html>

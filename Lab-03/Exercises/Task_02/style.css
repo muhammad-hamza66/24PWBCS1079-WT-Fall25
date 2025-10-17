@@ -1,0 +1,88 @@
+    body {
+      background-color: #fafafa;
+      color: #333;
+      line-height: 1.6;
+      margin: 40px;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3em;
+      text-align: center;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2em;
+      color: #222;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+
+    .px-size {
+      font-size: 18px;
+    }
+
+    .em-size {
+      font-size: 1.5em;
+    }
+
+    .rem-size {
+      font-size: 1.2rem;
+    }
+
+    .percent-size {
+      font-size: 120%;
+    }
+
+    .left {
+      text-align: left;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .right {
+      text-align: right;
+    }
+
+    .underline {
+      text-decoration: underline;
+    }
+
+    .overline {
+      text-decoration: overline;
+    }
+
+    .line-through {
+      text-decoration: line-through;
+    }
+
+    .uppercase {
+      text-transform: uppercase;
+    }
+
+    .capitalize {
+      text-transform: capitalize;
+    }
+
+
+    .shadow1 {
+      text-shadow: 2px 2px 4px gray;
+    }
+
+    .shadow2 {
+      text-shadow: 0 0 10px red;
+    }
+
+    .shadow3 {
+      text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    }

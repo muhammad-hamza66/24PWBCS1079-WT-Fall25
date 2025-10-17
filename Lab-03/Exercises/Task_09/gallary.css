@@ -1,0 +1,68 @@
+
+.gallery-container {
+  text-align: center;
+  padding: 50px;
+  background-color: #f8f9fa;
+  font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.transform-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: #007bff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  perspective: 1000px;
+}
+
+.box.rotate:hover {
+  transform: rotate(45deg);
+  background-color: #ff6347;
+}
+
+.box.scale:hover {
+  transform: scale(1.3);
+  background-color: #28a745;
+}
+
+.box.translate:hover {
+  transform: translate(50px, -20px);
+  background-color: #ffc107;
+  color: black;
+}
+
+.box.origin {
+  transform-origin: top left;
+}
+.box.origin:hover {
+  transform: rotate(45deg);
+  background-color: #6f42c1;
+}
+
+.box.combined:hover {
+  transform: rotate(15deg) scale(1.2) translate(15px, -10px);
+  background-color: #17a2b8;
+}
+
+.box.threeD:hover {
+  transform: rotateY(180deg) rotateX(15deg);
+  background-color: #ff5722;
+}

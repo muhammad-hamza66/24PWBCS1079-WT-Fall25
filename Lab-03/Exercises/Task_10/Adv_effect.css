@@ -1,0 +1,131 @@
+/* Container setup */
+.effects-container {
+  text-align: center;
+  padding: 50px;
+  background-color: #f8f9fa;
+  font-family: "Poppins", sans-serif;
+}
+
+/* 🌈 Gradient Text */
+.gradient-text {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #ff512f, #dd2476);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ✅ Custom Checkboxes & Radios */
+.custom-inputs {
+  margin: 40px 0;
+}
+
+.checkbox,
+.radio {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px;
+  cursor: pointer;
+  position: relative;
+  font-size: 16px;
+}
+
+/* Hide default input */
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+}
+
+/* Checkbox style */
+.checkmark {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #007bff;
+  border-radius: 4px;
+  position: relative;
+  transition: background 0.3s ease;
+}
+
+input[type="checkbox"]:checked + .checkmark {
+  background-color: #007bff;
+}
+input[type="checkbox"]:checked + .checkmark::after {
+  content: "✔";
+  position: absolute;
+  color: white;
+  font-size: 14px;
+  left: 3px;
+  top: -1px;
+}
+
+/* Radio button style */
+.radiomark {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  position: relative;
+}
+
+input[type="radio"]:checked + .radiomark::after {
+  content: "";
+  position: absolute;
+  background-color: #007bff;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  top: 3px;
+  left: 3px;
+}
+
+/* ⏳ CSS Loader (Spinning Circle) */
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #ddd;
+  border-top: 6px solid #007bff;
+  border-radius: 50%;
+  margin: 40px auto;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* 🖼️ Text Clipping with Image */
+.clipped-text {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: url("https://images.unsplash.com/photo-1504674900247-0877df9cc836")
+    center/cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 40px;
+}
+
+/* 💡 Complex Shadow Effects */
+.shadow-box {
+  width: 250px;
+  margin: 50px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  font-weight: 600;
+  color: #333;
+  box-shadow:
+    4px 4px 10px rgba(0, 0, 0, 0.2),
+    -4px -4px 10px rgba(255, 255, 255, 0.6),
+    inset 0 0 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shadow-box:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    6px 6px 18px rgba(0, 0, 0, 0.25),
+    -6px -6px 18px rgba(255, 255, 255, 0.8),
+    inset 0 0 10px rgba(0, 0, 0, 0.1);
+}

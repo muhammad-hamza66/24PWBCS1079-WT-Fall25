@@ -1,0 +1,205 @@
+/* ===== Root & Base ===== */
+:root {
+  --primary-color: #ff6347; /* Tomato */
+  --secondary-color: #ff8566;
+  --bg-color: #fff8f7;
+  --text-color: #222;
+  --white: #fff;
+  --theory-bg: #ffe7e2;
+  --lab-bg: #eaf8e6;
+  --break-bg: #fff3cd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* ===== Navbar (Consistent) ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--white);
+  padding: 15px 60px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  position: relative;
+  padding: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--primary-color);
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+/* ===== Page Header ===== */
+.page-header {
+  text-align: center;
+  margin: 60px 10px 30px;
+  color: var(--primary-color);
+}
+
+.page-header h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.page-header p {
+  color: #555;
+  font-size: 1rem;
+}
+
+/* ===== Schedule Table ===== */
+.table-container {
+  width: 90%;
+  margin: 40px auto;
+  overflow-x: auto;
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--white);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.schedule-table th,
+.schedule-table td {
+  text-align: center;
+  padding: 15px;
+  border: 1px solid #eee;
+  font-size: 0.95rem;
+}
+
+.schedule-table th {
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  color: var(--white);
+  font-weight: 600;
+}
+
+.schedule-table tbody tr:nth-child(even) {
+  background: #fff8f6;
+}
+
+.schedule-table tbody tr:hover {
+  background: #ffe9e4;
+  transition: 0.3s ease;
+}
+
+/* ===== Course Type Colors ===== */
+.theory {
+  background: var(--theory-bg);
+  color: #b22222;
+  font-weight: 500;
+}
+
+.lab {
+  background: var(--lab-bg);
+  color: #2e7d32;
+  font-weight: 500;
+}
+
+.break-row {
+  background: var(--break-bg);
+  font-weight: bold;
+  color: #444;
+}
+
+/* ===== Back Button ===== */
+.back-home {
+  display: block;
+  width: fit-content;
+  margin: 30px auto 80px;
+  text-decoration: none;
+  color: var(--white);
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.back-home:hover {
+  transform: scale(1.05);
+  background: var(--secondary-color);
+}
+
+/* ===== Footer ===== */
+.footer {
+  background: var(--primary-color);
+  color: var(--white);
+  text-align: center;
+  padding: 15px;
+  font-size: 0.95rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .page-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .schedule-table th,
+  .schedule-table td {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+
+  .navbar {
+    padding: 15px 25px;
+  }
+}
