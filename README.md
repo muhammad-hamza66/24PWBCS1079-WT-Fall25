@@ -1,23 +1,12 @@
-# 🌐 Web Technologies Portfolio
+Web Technologies Lab Exercises (Fall 2025)
 
-This repository contains my Web Technologies Lab Exercises for **Fall 2025**.  
-Each task demonstrates basic web development concepts such as HTML structure, navigation, forms, and GitHub Pages deployment.
+This repository contains the lab exercises for the Web Technologies course (Fall 2025) by Muhammad Hamza.
+It showcases a simple static website built with HTML and CSS, demonstrating fundamental web development concepts, structured navigation, and deployment using GitHub Pages.
 
-## 📚 Contents
-- **Task 1:** Basic HTML Profile Page  
-- **Task 2:** Weekly Class Schedule  
-- **Task 3:** Navigation Menu  
-- **Task 4:** Registration Form  
-- **Task 5:** GitHub Pages Setup  
-- **Task 6:** Portfolio Landing Page  
-- **Task 7:** Cross-Page Navigation  
-- **Task 8:** GitHub Pages Customization  
+ Contents
 
-## 🔗 Live Site
-You can view my deployed portfolio here:  
-👉 [https://muhammad-hamza66.github.io/24PWBCS1079-WT-Fall25](https://muhammad-hamza66.github.io/24PWBCS1079-WT-Fall25)
+Lab01-folder: Introduction to development environment setup and Git basics.
 
-## 👨‍💻 Author
-**Muhammad Hamza**  
-Reg. No: 24PWBCS1079  
-University of Engineering and Technology (UET), Peshawar
+Lab02-folder: Basic HTML pages, internal navigation, profile, and registration forms.
+
+Lab03-folder: Advanced webpage design using HTML and CSS, including layout styling, forms, and responsive design elements.
